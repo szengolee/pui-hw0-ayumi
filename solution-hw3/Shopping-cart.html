@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <title>Shopping cart</title>
+
+  <body>
+
+    <header>
+      <a href="index.html"><img src="assets/logo-01.svg" alt="logo-01" width="400" class="logo"></a>
+      <div>
+        <nav class="nav">
+          <a href="index.html"><h3 class="activeNav">PRODUCTS</h3></a>
+          <a href="Shopping-cart.html"><h3>CART</h3></a>
+        </nav>
+        <hr>
+        <h1>Our hand-made cinnamon rolls</h1>
+      </div>
+    </header>
+
+    <div class="container">
+
+        <div class="cartItem">
+
+          <div class="flexChild">
+            <img src="assets/original-cinnamon-roll.jpg" alt="original-cinnamon-roll" width="200" class="product">
+
+            <div class="cartDesc">
+              <p>Original Cinnamon Roll</p>
+              <p>Glazing: Keep original</p>
+              <p>Pack Size: 1</p>
+            </div>
+          </div>
+
+            <p>$2.49</p>
+
+        </div>
+
+        <h2 class="removeButton">Remove</h2>
+  
+        <div class="cartItem">
+          <div class="flexChild">
+            <img src="assets/double-chocolate-cinnamon-roll.jpg" alt="double chocolate cinnamon roll" width="200" class="product">
+            
+            <div class="cartDesc">
+            <p>Double Chocolate Cinnamon Roll</p>
+            <p>Glazing: Sugar milk</p>
+            <p>Pack Size: 6</p>
+            </div>
+          </div>
+
+          <p>$27.45</p>
+
+        </div>
+
+        <h2 class="removeButton">Remove</h2>
+
+      </div>
+
+      <hr id="footerHr">
+
+      <div class="cartTotal">
+          <p>Total:</p>
+          <p>$29.94</p>
+      </div>
+
+      <div id="checkOutBtnDiv">
+       <button type="button" id="checkOutBtn">Checkout</button>
+      </div>
+
+    </div>
+
+  </body>
+</html>
