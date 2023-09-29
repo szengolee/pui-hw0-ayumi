@@ -43,17 +43,15 @@ const rollType = params.get("roll");
 let information= Rolls[rollType]; // this is a dictionary , baseprice  Rolls ["basePrice"]
 
 const parentHeaderText = document.querySelector("#detailHeaderText"); //change header text
-parentHeaderText.innerText = rollType + " Cinnamon Roll"; 
+parentHeaderText.innerText = rollType + " Cinnamon Roll";
 
 const parentImage = document.querySelector("#detailImage");
-parentImage.src = "./assets/" + rollType + "-cinnamon-roll" + ".jpg";
+parentImage.src = "../assets/products/" + Rolls[rollType].imageFile;
 
 let basePriceValue = document.querySelector("#price");
 basePriceValue = Rolls[rollType].basePrice.toFixed(2); //update basePrice dynamically
 const basePriceElement = document.querySelector("#price");
 basePriceElement.innerText = "$ " + basePriceValue;
-
-
 
 
 const glazingOptions = {"Keep original":0, "Sugar milk":0, "Vanilla milk":0.5, "Double chocolate":1.5};
@@ -98,7 +96,7 @@ function priceChange(){
     let glazingPrice = glazingOptions[glazingChoice];
     let packPrice = packOptions[packChoice];
   
-    let totalPrice = (basePriceValue + glazingPrice) * packPrice;
+    let totalPrice = (parseFloat(basePriceValue) + glazingPrice) * packPrice;
   
     let price = document.querySelector("#price");
     parseFloat(price);
