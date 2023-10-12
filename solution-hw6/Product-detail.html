@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <script src="rollsData.js" defer ></script>
+  <script src="customiseDetailsPage.js" defer ></script>
+  <title>Product details</title>
+  
+  <body>
+    <header>
+      <a href="index.html"><img src="../assets/logo/logo-01.svg" alt="logo-01" width="400" class="logo"></a>
+      <div>
+        <nav class="nav">
+          <a href="index.html"><h3 class="activeNav">PRODUCTS</h3></a>
+          <a href="Shopping-cart.html"><h3>CART</h3></a>
+        </nav>
+        <hr>
+        <h1 id = "detailHeaderText">1</h1>
+      </div>
+    </header>
+
+    <div class="container">
+
+      <div class="productDetailList">
+        <img id = "detailImage" alt="original-cinnamon-roll" width="600" class="product">
+
+        <div id="customiseDesc">
+          <p>Customize our delicious, hand-made cinnamon roll to your liking!</p>
+
+          <div class="dropdown">
+            <div>
+              <div>
+                <p>Glazing:</p>
+              </div>
+              
+              <div id = "dropdownParentGlazing">
+              </div>
+              <!--
+                <div class="select">
+                <select name="glazing">
+                <option value="Keep_original">Keep original</option>
+                <option value="Sugar_milk">Sugar milk</option>
+                <option value="Vanilla_milk">Vanilla milk</option>
+                <option value="Double_chocolate">Double chocolate</option>
+                </select>
+                </div>
+              -->
+
+            </div>
+
+            <div>
+              <div>
+                <p>Pack size:</p>
+              </div>
+
+              <div id = "dropdownParentPack">
+              </div>
+              <!--
+              <div class="select">
+              <select name="packsize">
+              <option value="1">1</option>
+              <option value="3">3</option>
+              <option value="6">6</option>
+              <option value="12">12</option>
+              </select>
+              </div>
+              -->
+
+            </div>
+
+            <div class="summary">
+              <p id="price"></p>
+              <button type="button" id= "addToCartBtn">Add to Cart</button>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </body>
+</html>

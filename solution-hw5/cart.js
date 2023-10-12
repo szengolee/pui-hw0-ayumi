@@ -73,7 +73,6 @@ function createElement(roll) {
     const clone = template.content.cloneNode(true);
 
     roll.element = clone.querySelector(".roll");
-    console.log(roll.element);
 
     const cartImage = clone.querySelector(".cartImage");
     const cartTitle = clone.querySelector(".cartTitle");
