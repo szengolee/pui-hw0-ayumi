@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta name="viewport" content="width = 1050, user-scalable = no" />
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <script src="turnjs4/extras/jquery.min.1.7.js"></script>
+  <script src="turnjs4/extras/modernizr.2.5.3.min.js"></script>
+  <script src="turnjs4/lib/turn.js"></script>
+  <script src="turnjs4/lib/turn.html4.min.js"></script>
+  
+  <script src="main.js" defer></script>
+
+  <title>Guest book</title>
+
+
+
+  <body>
+
+      <div class="container"> 
+        <div class = "introduction">
+          <h1>Welcome to my guestbook!</h1>
+          <p>Flip the guestbook by hovering on the edge of the page.</p>
+          <p>You can also leave a message too!</p>
+        </div>
+        <div class="flipbook">
+        
+          <div class="cover">
+          </div>
+        
+          <div class="page">
+              <p class="comment">Your portfolio is impressive! I really like the way you blend creativity and functionality in your designs. Each project tells a unique story, and it's clear you put thought into every detail. Keep up the great work!</p>
+              <img src="stickers/idea.png" alt="placeholder sticker" width="150" class="sticker">
+          </div>
+
+          <div class="page">
+            <p class="comment">Really loving your portfolio! Your designs are clean and eye-catching. Great job on the attention to detail.</p>
+            <img src="stickers/keep-exploring.png" alt="placeholder sticker" width="150" class="sticker">
+          </div>
+
+          <div class="page">
+            <p class="comment">Impressed by your work! Your designs have a nice balance and simplicity that stands out. Looking forward to seeing more.</p>
+            <img src="stickers/love-it.png" alt="placeholder sticker" width="150" class="sticker">
+          </div>
+
+          <div class="page">
+            <p class="comment">I wonder if it will be better to place your final iterations at the top of the project page.</p>
+            <img src="stickers/not-sure.png" alt="placeholder sticker" width="150" class="sticker">
+          </div>
+          
+        </div> 
+      </div>
+
+      <label for="new-comment" id = "instruction">Leave your thoughts:</label>
+      <textarea id="new-comment" name="comment" rows="4" cols="50"></textarea>
+    
+      <section class="container">
+        <h2>Select a sticker that goes well with your thoughts</h2>
+        
+        <div id="sticker-set">
+        <input type="radio" id="idea" value="idea" name="sticker-set">
+            <label for="idea"> <img src="stickers/idea.png" alt="lightbulb-lablled-idea-sticker" width="80" ></label><br>
+    
+        <input type="radio" id="keep-exploring" value="keep-exploring" name="sticker-set">
+            <label for="keep-exploring"> <img src="stickers/keep-exploring.png" alt="keep-exploring-sticker" width="80" ></label><br>  
+    
+        <input type="radio" id="love-it" value="love-it" name="sticker-set">
+            <label for="love-it"> <img src="stickers/love-it.png" alt="love-it-sticker" width="80" ></label><br>      
+    
+        <input type="radio" id="not-sure" value="not-sure" name="sticker-set">
+            <label for="not-sure"> <img src="stickers/not-sure.png" alt="not-sure-sticker" width="80" ></label><br>  
+    
+        <input type="radio" id="ok" value="ok" name="sticker-set">
+            <label for="ok"> <img src="stickers/ok.png" alt="OK-sticker" width="80" ></label><br>  
+        </div>
+    
+    </section>
+    
+    
+      <div class="container">
+        <button type="button" id="submit">Submit</button>
+      </div>
+
+  </body>
+
+</html>
